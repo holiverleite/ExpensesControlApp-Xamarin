@@ -13,3 +13,5 @@
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp/obj/Debug/netstandard2.0/ExpensesControlApp.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp/obj/Debug/netstandard2.0/ref/ExpensesControlApp.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp/obj/Debug/netstandard2.0/ExpensesControlApp.pdb
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp/obj/Debug/netstandard2.0/ExpensesControlApp.csprojAssemblyReference.cache
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp/obj/Debug/netstandard2.0/ExpenseCreation.xaml.g.cs

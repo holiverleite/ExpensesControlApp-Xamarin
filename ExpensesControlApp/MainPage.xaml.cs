@@ -45,6 +45,10 @@ namespace ExpensesControlApp
 
         async void createExpenseClicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new ExpenseCreation
+            {
+                BindingContext = new Expense()
+            });
 
         }
 

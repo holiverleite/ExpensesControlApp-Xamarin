@@ -3,6 +3,9 @@ namespace ExpensesControlApp.Model
 {
     public class Expense
     {
+
+        public Expense(){}
+
         public Expense(String title, String description, String amount, DateTime date)
         {
             this.expenseTitle = title;
