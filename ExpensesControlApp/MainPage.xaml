@@ -21,10 +21,17 @@
             BackgroundColor="Azure"
             FontSize="78.0"/>
 
-        <ListView x:Name="listView"
-              Margin="10"
-                  BackgroundColor="Azure"
-              ItemSelected="OnListViewItemSelected">
+        <ListView
+            x:Name="listView"
+            Margin="10"
+            ItemSelected="OnListViewItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding expenseTitle}"
+                              Detail="{Binding expenseAmount}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
+
     </StackLayout>
 </ContentPage>
