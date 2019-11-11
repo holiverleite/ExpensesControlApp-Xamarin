@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{00DBD659-3480-43B5-8CE6-6725803C74FF}|Default">
+  <MonoDevelop.Ide.ItemProperties.ExpensesControlApp.Android PreferredExecutionTarget="Android.H8AXB601X97843M" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpensesControlApp/App.xaml.cs">
+    <Files>
+      <File FileName="ExpensesControlApp/MainPage.xaml.cs" Line="30" Column="1" />
+      <File FileName="ExpensesControlApp/MainPage.xaml" Line="25" Column="1" />
+      <File FileName="ExpensesControlApp/App.xaml" Line="1" Column="1" />
+      <File FileName="ExpensesControlApp/App.xaml.cs" Line="13" Column="39" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ExpensesControlApp" expanded="True">
+            <Node name="ExpensesControlApp" expanded="True">
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ExpensesControlApp.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8F67DC34-89AF-4D96-88DC-A24D579DA6B5" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
