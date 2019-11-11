@@ -11,5 +11,10 @@ namespace ExpensesControlApp
         {
             InitializeComponent();
         }
+
+        async void DidTapCancelExpenseCreation(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

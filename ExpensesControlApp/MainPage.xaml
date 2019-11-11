@@ -24,7 +24,7 @@
         <ListView
             x:Name="listView"
             Margin="10"
-            ItemSelected="OnListViewItemSelected">
+            ItemSelected="didTapItemListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding expenseTitle}"

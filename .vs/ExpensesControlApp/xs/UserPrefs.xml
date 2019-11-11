@@ -1,24 +1,21 @@
 ﻿<Properties StartupConfiguration="{00DBD659-3480-43B5-8CE6-6725803C74FF}|Default">
   <MonoDevelop.Ide.ItemProperties.ExpensesControlApp.Android PreferredExecutionTarget="Android.H8AXB601X97843M" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExpensesControlApp/MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpensesControlApp/ExpenseDetail.xaml.cs">
     <Files>
-      <File FileName="ExpensesControlApp/MainPage.xaml.cs" Line="50" Column="38" />
-      <File FileName="ExpensesControlApp/MainPage.xaml" Line="21" Column="36" />
-      <File FileName="ExpensesControlApp/ExpenseCreation.xaml" Line="10" Column="1" />
-      <File FileName="ExpensesControlApp/ExpenseCreation.xaml.cs" Line="1" Column="1" />
-      <File FileName="ExpensesControlApp/Model/Expense.cs" Line="13" Column="10" />
+      <File FileName="ExpensesControlApp/MainPage.xaml.cs" Line="48" Column="44" />
+      <File FileName="ExpensesControlApp/MainPage.xaml" Line="9" Column="27" />
+      <File FileName="ExpensesControlApp/ExpenseCreation.xaml" Line="19" Column="57" />
+      <File FileName="ExpensesControlApp/ExpenseCreation.xaml.cs" Line="21" Column="1" />
+      <File FileName="ExpensesControlApp/ExpenseDetail.xaml" Line="1" Column="1" />
+      <File FileName="ExpensesControlApp/ExpenseDetail.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ExpensesControlApp" expanded="True">
-            <Node name="ExpensesControlApp" expanded="True">
-              <Node name="Model" expanded="True" />
-              <Node name="App.xaml" expanded="True" />
+            <Node name="ExpensesControlApp" expanded="True" selected="True">
               <Node name="ExpenseCreation.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="ExpensesControlApp.Android" expanded="True">
               <Node name="Properties" expanded="True" />

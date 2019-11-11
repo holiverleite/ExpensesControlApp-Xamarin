@@ -51,9 +51,15 @@ namespace ExpensesControlApp
             });
         }
 
-        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void didTapItemListView(object sender, SelectedItemChangedEventArgs e)
         {
-
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new ExpenseDetail
+                {
+                    BindingContext = e.SelectedItem as ExpenseDetail
+                });
+            }
         }
     }
 }

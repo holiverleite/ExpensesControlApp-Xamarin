@@ -15,7 +15,8 @@
             </Grid.ColumnDefinitions>
             <Button Text="Salvar"/>
             <Button Grid.Column="1"
-                    Text="Cancelar"/>
+                    Text="Cancelar"
+                    Clicked="DidTapCancelExpenseCreation"/>
         </Grid>
     </StackLayout>
     </ContentPage.Content>
