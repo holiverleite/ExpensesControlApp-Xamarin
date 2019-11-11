@@ -45,11 +45,10 @@ namespace ExpensesControlApp
 
         async void createExpenseClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExpenseCreation
+            await Navigation.PushModalAsync(new ExpenseCreation
             {
                 BindingContext = new Expense()
             });
-
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)

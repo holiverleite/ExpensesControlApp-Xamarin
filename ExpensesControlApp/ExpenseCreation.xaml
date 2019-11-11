@@ -4,6 +4,19 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ExpensesControlApp.ExpenseCreation">
     <ContentPage.Content>
-        <Label Text="Teste"/>
+        <StackLayout Margin="20">
+        <Editor Placeholder="Titulo" />
+        <Editor Placeholder="Descrição" />
+        <Editor Placeholder="R$0,00" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Salvar"/>
+            <Button Grid.Column="1"
+                    Text="Cancelar"/>
+        </Grid>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>
