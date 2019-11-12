@@ -14,7 +14,16 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout>
+
         <Label
+            Margin="5"
+            Text="Total:"
+            HorizontalOptions="Center"
+            BackgroundColor="Azure"
+            FontSize="22.0"/>
+
+        <Label
+            x:Name="total"
             Margin="20"
             Text="R$0,00"
             HorizontalOptions="Center"

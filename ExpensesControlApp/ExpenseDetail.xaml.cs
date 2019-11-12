@@ -12,5 +12,12 @@ namespace ExpensesControlApp
         {
             InitializeComponent();
         }
+
+        async void didTapDeleteExpense(object sender, EventArgs e)
+        {
+            var expense = (Expense)BindingContext;
+            await App.Database.DeleteExpenseAsync(expense);
+            await Navigation.PopAsync();
+        }
     }
 }

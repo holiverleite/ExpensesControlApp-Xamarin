@@ -26,20 +26,23 @@ namespace ExpensesControlApp
         {
             base.OnAppearing();
 
-            //var e1 = new Expense
-            //{
-            //    expenseTitle = "Alimentacao",
-            //    expenseDescription = "Alimentacao descricao",
-            //    expenseAmount = "R$300,00",
-            //    expenseDate = ""
-            //}; 
-
-
-            //expenses.Add(e1);
-
-            //listView.ItemsSource = expenses.ToList();
-
             listView.ItemsSource = await App.Database.GetExpensesAsync();
+
+            var amount = 0.0;
+            foreach (Expense item in listView.ItemsSource)
+            {
+                try
+                {
+                    var floatValue = Math.Round(float.Parse(item.expenseAmount), 2);
+                    amount = amount + floatValue;
+                }
+                catch
+                {
+
+                }             
+            }
+
+            total.Text = "R$ " + amount.ToString();
         }
 
         async void createExpenseClicked(object sender, EventArgs e)

@@ -7,7 +7,7 @@
         <StackLayout Margin="20">
         <Editor x:Name="title" Placeholder="Titulo" />
         <Editor x:Name="description" Placeholder="Descrição" />
-        <Editor x:Name="amount" Placeholder="R$0,00" />
+        <Editor x:Name="amount" Placeholder="R$0,00" Keyboard="Numeric"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />

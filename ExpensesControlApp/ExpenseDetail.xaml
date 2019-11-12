@@ -17,5 +17,8 @@
 
         <Label Text="Data do registro:" FontSize="22.0"/>
         <Label Text="{Binding expenseDate}" FontSize="18.0"/>
+
+        <Button Text="Deletar"
+                Clicked="didTapDeleteExpense"/>
     </StackLayout>
 </ContentPage>
