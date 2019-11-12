@@ -9,7 +9,7 @@
     Title="Minhas Despesas">
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+"
+        <ToolbarItem Text="CRIAR"
                      Clicked="createExpenseClicked" />
     </ContentPage.ToolbarItems>
 

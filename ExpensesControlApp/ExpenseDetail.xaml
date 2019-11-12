@@ -2,7 +2,20 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ExpensesControlApp.ExpenseDetail">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    x:Class="ExpensesControlApp.ExpenseDetail"
+    Title="{Binding expenseTitle}">
+
+    <StackLayout Margin="33.0">
+        <Label Text="Titulo:" FontSize="22.0"/>
+        <Label Text="{Binding expenseTitle}" FontSize="18.0"/>
+
+        <Label Text="Descrição:" FontSize="22.0"/>
+        <Label Text="{Binding expenseDescription}" FontSize="18.0"/>
+
+        <Label Text="Valor:" FontSize="22.0"/>
+        <Label Text="{Binding expenseAmount}" FontSize="18.0"/>
+
+        <Label Text="Data do registro:" FontSize="22.0"/>
+        <Label Text="{Binding expenseDate}" FontSize="18.0"/>
+    </StackLayout>
 </ContentPage>

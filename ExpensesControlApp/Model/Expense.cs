@@ -6,7 +6,7 @@ namespace ExpensesControlApp.Model
 
         public Expense(){}
 
-        public Expense(String title, String description, String amount, DateTime date)
+        public Expense(String title, String description, String amount, string date)
         {
             this.expenseTitle = title;
             this.expenseDescription = description;
@@ -17,6 +17,6 @@ namespace ExpensesControlApp.Model
         public string expenseTitle { get; set; }
         public string expenseDescription { get; set; }
         public string expenseAmount { get; set; }
-        public DateTime expenseDate { get; set; }
+        public string expenseDate { get; set; }
     }
 }

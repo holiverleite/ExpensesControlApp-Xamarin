@@ -26,12 +26,12 @@ namespace ExpensesControlApp
 
             var expenses = new List<Expense>();
 
-            var e1 = new Expense(title:"Alimentação",description:"Praça de alimentação",amount:"R$200,00",date:new DateTime());
-            var e2 = new Expense(title: "Carro", description: "Mecanica", amount: "R$100,00", date: new DateTime());
-            var e3 = new Expense(title: "Transporte", description: "Onibus", amount: "R$20,00", date: new DateTime());
-            var e4 = new Expense(title: "Estadia", description: "Aluguel", amount: "R$130,00", date: new DateTime());
-            var e5 = new Expense(title: "Cinema", description: "Lazer", amount: "R$50,00", date: new DateTime());
-            var e6 = new Expense(title: "Alimentação", description: "Praça de alimentação", amount: "R$240,50", date: new DateTime());
+            var e1 = new Expense(title:"Alimentação",description:"Praça de alimentação",amount:"R$200,00",date: DateTime.Now.ToString());
+            var e2 = new Expense(title: "Carro", description: "Mecanica", amount: "R$100,00", date: DateTime.Now.ToString());
+            var e3 = new Expense(title: "Transporte", description: "Onibus", amount: "R$20,00", date: DateTime.Now.ToString());
+            var e4 = new Expense(title: "Estadia", description: "Aluguel", amount: "R$130,00", date: DateTime.Now.ToString());
+            var e5 = new Expense(title: "Cinema", description: "Lazer", amount: "R$50,00", date: DateTime.Now.ToString());
+            var e6 = new Expense(title: "Alimentação", description: "Praça de alimentação", amount: "R$240,50", date: DateTime.Now.ToString());
 
             expenses.Add(e1);
             expenses.Add(e2);
@@ -57,7 +57,7 @@ namespace ExpensesControlApp
             {
                 await Navigation.PushAsync(new ExpenseDetail
                 {
-                    BindingContext = e.SelectedItem as ExpenseDetail
+                    BindingContext = e.SelectedItem as Expense
                 });
             }
         }
