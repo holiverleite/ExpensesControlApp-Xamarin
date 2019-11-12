@@ -15,16 +15,16 @@ namespace ExpensesControlApp
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public static List<Expense> expenses;
         public MainPage()
         {
             InitializeComponent();
+            expenses = new List<Expense>();
         }
 
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-
-            var expenses = new List<Expense>();
+            base.OnAppearing();     
 
             var e1 = new Expense(title:"Alimentação",description:"Praça de alimentação",amount:"R$200,00",date: DateTime.Now.ToString());
             var e2 = new Expense(title: "Carro", description: "Mecanica", amount: "R$100,00", date: DateTime.Now.ToString());
