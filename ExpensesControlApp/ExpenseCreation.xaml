@@ -5,15 +5,16 @@
     x:Class="ExpensesControlApp.ExpenseCreation">
     <ContentPage.Content>
         <StackLayout Margin="20">
-        <Editor Placeholder="Titulo" />
-        <Editor Placeholder="Descrição" />
-        <Editor Placeholder="R$0,00" />
+        <Editor x:Name="title" Placeholder="Titulo" />
+        <Editor x:Name="description" Placeholder="Descrição" />
+        <Editor x:Name="amount" Placeholder="R$0,00" />
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Text="Salvar"/>
+            <Button Text="Salvar"
+                    Clicked="DidTapSaveButton"/>
             <Button Grid.Column="1"
                     Text="Cancelar"
                     Clicked="DidTapCancelExpenseCreation"/>

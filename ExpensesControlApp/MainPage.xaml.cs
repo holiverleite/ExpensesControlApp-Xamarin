@@ -22,25 +22,24 @@ namespace ExpensesControlApp
             expenses = new List<Expense>();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
-            base.OnAppearing();     
+            base.OnAppearing();
 
-            var e1 = new Expense(title:"Alimentação",description:"Praça de alimentação",amount:"R$200,00",date: DateTime.Now.ToString());
-            var e2 = new Expense(title: "Carro", description: "Mecanica", amount: "R$100,00", date: DateTime.Now.ToString());
-            var e3 = new Expense(title: "Transporte", description: "Onibus", amount: "R$20,00", date: DateTime.Now.ToString());
-            var e4 = new Expense(title: "Estadia", description: "Aluguel", amount: "R$130,00", date: DateTime.Now.ToString());
-            var e5 = new Expense(title: "Cinema", description: "Lazer", amount: "R$50,00", date: DateTime.Now.ToString());
-            var e6 = new Expense(title: "Alimentação", description: "Praça de alimentação", amount: "R$240,50", date: DateTime.Now.ToString());
+            //var e1 = new Expense
+            //{
+            //    expenseTitle = "Alimentacao",
+            //    expenseDescription = "Alimentacao descricao",
+            //    expenseAmount = "R$300,00",
+            //    expenseDate = ""
+            //}; 
 
-            expenses.Add(e1);
-            expenses.Add(e2);
-            expenses.Add(e3);
-            expenses.Add(e4);
-            expenses.Add(e5);
-            expenses.Add(e6);
 
-            listView.ItemsSource = expenses.ToList();
+            //expenses.Add(e1);
+
+            //listView.ItemsSource = expenses.ToList();
+
+            listView.ItemsSource = await App.Database.GetExpensesAsync();
         }
 
         async void createExpenseClicked(object sender, EventArgs e)

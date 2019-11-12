@@ -4,6 +4,12 @@
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/Java.Interop.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/Mono.Android.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/mscorlib.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLite-net.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_green.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLitePCLRaw.batteries_v2.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLitePCLRaw.core.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLitePCLRaw.lib.e_sqlite3.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/SQLitePCLRaw.provider.e_sqlite3.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Core.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Numerics.dll
@@ -64,4 +70,14 @@
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Web.Services.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Collections.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Linq.Expressions.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Reflection.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Diagnostics.Debug.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Threading.Tasks.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Linq.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Threading.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
+/Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/System.Globalization.dll
 /Users/monitora/git/ExpensesControlApp/ExpensesControlApp.Android/obj/Debug/android/assets/Mono.Security.dll
