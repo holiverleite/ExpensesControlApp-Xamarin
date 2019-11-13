@@ -12,13 +12,13 @@
     <StackLayout>
         <StackLayout Margin="33.0">
             <Label Text="Titulo:" FontSize="18.0"/>
-            <Label Text="{Binding expenseTitle}" FontSize="16.0"/>
+            <Label Text="{Binding expenseTitle}" FontSize="16.0" x:Name="title"/>
 
             <Label Text="Descrição:" FontSize="18.0" Margin="0,25,0,0"/>
-            <Label Text="{Binding expenseDescription}" FontSize="16.0"/>
+            <Label Text="{Binding expenseDescription}" FontSize="16.0" x:Name="description"/>
 
             <Label Text="Valor:" FontSize="18.0" Margin="0,25,0,0" />
-            <Label Text="{Binding expenseAmount, StringFormat='R$ {0:F0}'}" FontSize="16.0"/>
+            <Label Text="{Binding expenseAmount, StringFormat='R$ {0:F0}'}" FontSize="16.0" x:Name="amount"/>
 
             <Label Text="Data do registro:" FontSize="18.0" Margin="0,25,0,0"/>
             <Label Text="{Binding expenseDate}" FontSize="16.0"/>

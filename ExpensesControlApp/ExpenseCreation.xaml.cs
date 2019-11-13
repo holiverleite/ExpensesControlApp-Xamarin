@@ -17,7 +17,9 @@ namespace ExpensesControlApp
         {
             base.OnAppearing();
 
-            if (BindingContext != null) {
+            var expense = (Expense)BindingContext;
+            if (expense.ID != 0)
+            {
                 SaveOrUpdateButton.Text = "Atualizar";
             }
         }
@@ -60,13 +62,13 @@ namespace ExpensesControlApp
             {
                 var currentTime = DateTime.Now.ToString();
 
-                if (BindingContext != null)
+                var expense = (Expense)BindingContext;
+                if (expense.ID != 0)
                 {
-                    var expense = (Expense)BindingContext;
                     await App.Database.SaveExpenseAsync(expense);
                 } else
                 {
-                    var expense = new Expense
+                    var exp = new Expense
                     {
                         expenseTitle = title.Text,
                         expenseDescription = description.Text,
@@ -74,7 +76,7 @@ namespace ExpensesControlApp
                         expenseDate = currentTime
                     };
 
-                    await App.Database.SaveExpenseAsync(expense);
+                    await App.Database.SaveExpenseAsync(exp);
                 }
                 await Navigation.PopModalAsync();
             }

@@ -1,16 +1,16 @@
-﻿<Properties StartupConfiguration="{7FC6CA9C-ACF7-424B-9414-27108A5F09CF}|Default">
+﻿<Properties StartupConfiguration="{00DBD659-3480-43B5-8CE6-6725803C74FF}|Default">
   <MonoDevelop.Ide.ItemProperties.ExpensesControlApp.Android PreferredExecutionTarget="Android.H8AXB601X97843M" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExpensesControlApp/Database/ExpenseDatabase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpensesControlApp/ExpenseDetail.xaml.cs">
     <Files>
       <File FileName="ExpensesControlApp/MainPage.xaml.cs" Line="27" Column="9" />
       <File FileName="ExpensesControlApp/MainPage.xaml" Line="11" Column="4" />
       <File FileName="ExpensesControlApp/ExpenseCreation.xaml" Line="35" Column="58" />
-      <File FileName="ExpensesControlApp/ExpenseCreation.xaml.cs" Line="76" Column="46" />
-      <File FileName="ExpensesControlApp/ExpenseDetail.xaml" Line="17" Column="47" />
-      <File FileName="ExpensesControlApp/ExpenseDetail.xaml.cs" Line="25" Column="1" />
+      <File FileName="ExpensesControlApp/ExpenseCreation.xaml.cs" Line="20" Column="51" />
+      <File FileName="ExpensesControlApp/ExpenseDetail.xaml" Line="15" Column="80" />
+      <File FileName="ExpensesControlApp/ExpenseDetail.xaml.cs" Line="21" Column="47" />
       <File FileName="ExpensesControlApp/Model/Expense.cs" />
       <File FileName="ExpensesControlApp/App.xaml.cs" />
-      <File FileName="ExpensesControlApp.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="ExpensesControlApp.iOS/Main.cs" Line="21" Column="1" />
       <File FileName="ExpensesControlApp.iOS/Main.cs" Line="21" Column="1" />
       <File FileName="ExpensesControlApp/Database/ExpenseDatabase.cs" Line="37" Column="55" />
     </Files>
@@ -19,11 +19,11 @@
         <State name="__root__">
           <Node name="ExpensesControlApp" expanded="True">
             <Node name="ExpensesControlApp" expanded="True">
-              <Node name="Database" expanded="True">
-                <Node name="ExpenseDatabase.cs" selected="True" />
-              </Node>
+              <Node name="Database" expanded="True" />
               <Node name="ExpenseCreation.xaml" expanded="True" />
-              <Node name="ExpenseDetail.xaml" expanded="True" />
+              <Node name="ExpenseDetail.xaml" expanded="True">
+                <Node name="ExpenseDetail.xaml.cs" selected="True" />
+              </Node>
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="ExpensesControlApp.Android" expanded="True">
