@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using ExpensesControlApp.Model;
 using System.Text.RegularExpressions;
 
@@ -14,27 +13,41 @@ namespace ExpensesControlApp
             InitializeComponent();
         }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (BindingContext != null) {
+                SaveOrUpdateButton.Text = "Atualizar";
+            }
+        }
+
         async void DidTapCancelExpenseCreation(object sender, EventArgs e)
         {
-            if (title.Text != null || description.Text != null || amount.Text != null)
+            if (BindingContext != null)
             {
-                bool confirmCancel = await DisplayAlert("Atenção", "Você perderá seus dados ao cancelar. Cancelar mesmo assim?", "Sim","Não");
-                if (confirmCancel)
+                await Navigation.PopModalAsync();
+            } else
+            {
+                if (title.Text != null || description.Text != null || amount.Text != null)
+                {
+                    bool confirmCancel = await DisplayAlert("Atenção", "Você perderá seus dados ao cancelar. Cancelar mesmo assim?", "Sim", "Não");
+                    if (confirmCancel)
+                    {
+                        await Navigation.PopModalAsync();
+                    }
+                }
+                else
                 {
                     await Navigation.PopModalAsync();
                 }
-            } else
-            {
-                await Navigation.PopModalAsync();
             }
-            
         }
 
-        async void DidTapSaveButton(object sender, EventArgs e)
+        async void DidTapSaveOrUpdateButton(object sender, EventArgs e)
         {
-
             var emailPattern = @"^([0-9]+).([0-9]+)([0-9])$";
-            
+
             if (title.Text == null || description.Text == null || amount.Text == null)
             {
                 await DisplayAlert("Atenção", "Todos os campos precisam ser preenchidos!", "OK");
@@ -45,15 +58,24 @@ namespace ExpensesControlApp
             }
             else
             {
-                var expense = new Expense
-                {
-                    expenseTitle = title.Text,
-                    expenseDescription = description.Text,
-                    expenseAmount = amount.Text,
-                    expenseDate = new DateTime().Date.ToString()
-                };
+                var currentTime = DateTime.Now.ToString();
 
-                await App.Database.SaveExpenseAsync(expense);
+                if (BindingContext != null)
+                {
+                    var expense = (Expense)BindingContext;
+                    await App.Database.SaveExpenseAsync(expense);
+                } else
+                {
+                    var expense = new Expense
+                    {
+                        expenseTitle = title.Text,
+                        expenseDescription = description.Text,
+                        expenseAmount = amount.Text,
+                        expenseDate = currentTime
+                    };
+
+                    await App.Database.SaveExpenseAsync(expense);
+                }
                 await Navigation.PopModalAsync();
             }
         }

@@ -12,11 +12,14 @@
                    FontSize="22"
                    Margin="0,18,0,0"/>
             <Editor x:Name="title"
+                    Text="{Binding expenseTitle}"
                     Placeholder="Titulo"
                     Margin="0,5,0,0"/>
             <Editor x:Name="description"
+                    Text="{Binding expenseDescription}"
                     Placeholder="Descrição" />
             <Editor x:Name="amount"
+                    Text="{Binding expenseAmount}"
                     Placeholder="R$0,00"
                     Keyboard="Numeric"/>
         </StackLayout>
@@ -26,12 +29,13 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Button Text="Salvar"
-                        BackgroundColor="Blue"
+                        x:Name="SaveOrUpdateButton"
+                        BackgroundColor="LightSeaGreen"
                         TextColor="White"
-                        Clicked="DidTapSaveButton"/>
+                        Clicked="DidTapSaveOrUpdateButton"/>
                 <Button Grid.Column="1"
                         Text="Cancelar"
-                        BackgroundColor="Blue"
+                        BackgroundColor="LightSalmon"
                         TextColor="White"
                         Clicked="DidTapCancelExpenseCreation"/>
             </Grid>

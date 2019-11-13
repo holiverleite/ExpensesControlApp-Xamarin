@@ -19,5 +19,16 @@ namespace ExpensesControlApp
             await App.Database.DeleteExpenseAsync(expense);
             await Navigation.PopAsync();
         }
+
+        async void didTapEditExpense(object sender, EventArgs e)
+        {
+            var expense = (Expense)BindingContext;
+            await Navigation.PushModalAsync(new ExpenseCreation
+            {
+                BindingContext = expense
+            });
+
+            await Navigation.PopToRootAsync();
+        }
     }
 }
