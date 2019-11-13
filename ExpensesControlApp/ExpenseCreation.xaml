@@ -3,22 +3,38 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ExpensesControlApp.ExpenseCreation">
+
     <ContentPage.Content>
-        <StackLayout Margin="20">
-        <Editor x:Name="title" Placeholder="Titulo" />
-        <Editor x:Name="description" Placeholder="Descrição" />
-        <Editor x:Name="amount" Placeholder="R$0,00" Keyboard="Numeric"/>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Text="Salvar"
-                    Clicked="DidTapSaveButton"/>
-            <Button Grid.Column="1"
-                    Text="Cancelar"
-                    Clicked="DidTapCancelExpenseCreation"/>
-        </Grid>
-    </StackLayout>
+        <StackLayout>
+            <StackLayout Margin="10,45,10,10">
+            <Label Text="Criar Despesa"
+                   HorizontalTextAlignment="Center"
+                   FontSize="22"
+                   Margin="0,18,0,0"/>
+            <Editor x:Name="title"
+                    Placeholder="Titulo"
+                    Margin="0,5,0,0"/>
+            <Editor x:Name="description"
+                    Placeholder="Descrição" />
+            <Editor x:Name="amount"
+                    Placeholder="R$0,00"
+                    Keyboard="Numeric"/>
+        </StackLayout>
+            <Grid VerticalOptions="EndAndExpand" Margin="25">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Salvar"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        Clicked="DidTapSaveButton"/>
+                <Button Grid.Column="1"
+                        Text="Cancelar"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        Clicked="DidTapCancelExpenseCreation"/>
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

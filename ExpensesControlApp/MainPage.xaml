@@ -14,21 +14,17 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout>
-
         <Label
-            Margin="5"
-            Text="Total:"
+            Margin="0,15,0,0"
+            Text="Gasto Total:"
             HorizontalOptions="Center"
-            BackgroundColor="Azure"
-            FontSize="22.0"/>
+            FontSize="20.0"/>
 
         <Label
             x:Name="total"
-            Margin="20"
-            Text="R$0,00"
+            Margin="0,0,0,0"
             HorizontalOptions="Center"
-            BackgroundColor="Azure"
-            FontSize="78.0"/>
+            FontSize="38.0"/>
 
         <ListView
             x:Name="listView"
@@ -37,10 +33,9 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding expenseTitle}"
-                              Detail="{Binding expenseAmount}"/>
+                              Detail="{Binding expenseAmount, StringFormat='R$ {0:F0}'}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 </ContentPage>

@@ -4,21 +4,26 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ExpensesControlApp.ExpenseDetail"
     Title="Detalhes da despesa">
+    <StackLayout>
+        <StackLayout Margin="33.0">
+            <Label Text="Titulo:" FontSize="18.0"/>
+            <Label Text="{Binding expenseTitle}" FontSize="16.0"/>
 
-    <StackLayout Margin="33.0">
-        <Label Text="Titulo:" FontSize="22.0"/>
-        <Label Text="{Binding expenseTitle}" FontSize="18.0"/>
+            <Label Text="Descrição:" FontSize="18.0" Margin="0,25,0,0"/>
+            <Label Text="{Binding expenseDescription}" FontSize="16.0"/>
 
-        <Label Text="Descrição:" FontSize="22.0"/>
-        <Label Text="{Binding expenseDescription}" FontSize="18.0"/>
+            <Label Text="Valor:" FontSize="18.0" Margin="0,25,0,0" />
+            <Label Text="{Binding expenseAmount, StringFormat='R$ {0:F0}'}" FontSize="16.0"/>
 
-        <Label Text="Valor:" FontSize="22.0"/>
-        <Label Text="{Binding expenseAmount}" FontSize="18.0"/>
-
-        <Label Text="Data do registro:" FontSize="22.0"/>
-        <Label Text="{Binding expenseDate}" FontSize="18.0"/>
+            <Label Text="Data do registro:" FontSize="18.0" Margin="0,25,0,0"/>
+            <Label Text="{Binding expenseDate}" FontSize="16.0"/>
+         </StackLayout>
 
         <Button Text="Deletar"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Margin="25"
+                VerticalOptions="EndAndExpand"
                 Clicked="didTapDeleteExpense"/>
-    </StackLayout>
+     </StackLayout>
 </ContentPage>
